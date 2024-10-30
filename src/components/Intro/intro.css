@@ -1,0 +1,62 @@
+#intro {
+    background-image: url('../../assets/fond-dep.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.introContent {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 70rem;
+}
+
+.introTitle {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #f9f9f9;
+}
+
+.ContactBtnContent {
+    margin-top: 2rem;
+}
+
+.ContactBtn {
+    background-color: #ff5722;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ContactBtn:hover {
+    background-color: #e64a19;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .introTitle {
+      font-size: 2.5rem;
+    }
+    
+    .ContactBtn {
+      padding: 0.8rem 2rem;
+      font-size: 1.2rem;
+    }
+  }

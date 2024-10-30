@@ -1,0 +1,72 @@
+#services {
+  width: 100vw;
+  background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
+ 
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.headingSec {
+  margin-bottom: 3rem;
+}
+
+.headingSecTitle {
+  font-size: 2.8rem;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.servicesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.serviceBox {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceBox:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border-radius: 0 0 12px 12px;
+  transition: background 0.3s ease;
+}
+
+.overlay h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.overlay ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.overlay li {
+  margin-bottom: 0.3rem;
+}
+
+.serviceBox:hover .overlay {
+  background: rgba(0, 0, 0, 0.8);
+}

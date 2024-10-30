@@ -1,0 +1,76 @@
+#contact {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f4f4f8 0%, #ffffff 100%);
+    text-align: center;
+  }
+  
+  .contactContainer {
+    max-width: 1100px; /* Augmente légèrement la largeur totale */
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .contactTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .contactGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Assure un minimum de 300px pour chaque colonne */
+    gap: 2rem;
+  }
+  
+  .contactItem {
+    background: #ffffff;
+    padding: 2.5rem; /* Augmente le padding interne pour plus d'espace */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .contactItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contactIcon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .contactItem h3 {
+    font-size: 1.4rem; /* Augmente légèrement la taille des sous-titres */
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contactItem p, .contactEmail, .contactPhone {
+    font-size: 1.2rem; /* Augmente la taille du texte pour une meilleure lisibilité */
+    color: #555;
+  }
+  
+  .contactPhone {
+    font-size: 1.6rem; /* Agrandit le numéro de téléphone */
+    font-weight: bold;
+    color: #ff5722;
+    text-decoration: none;
+  }
+  
+  .contactPhone:hover, .contactEmail:hover {
+    color: #e64a19;
+  }
+  
+  /* Réorganisation en colonne sur les petits écrans */
+  @media screen and (max-width: 768px) {
+    .contactGrid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+  

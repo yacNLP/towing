@@ -1,0 +1,84 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    height: 3rem;
+    width: auto;
+}
+
+.desktopMenu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.desktopMenuListItem {
+    margin: 0 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.desktopMenuListItem:hover,
+.active {
+    color: #ff5722;
+    border-bottom: 2px solid #ff5722;
+}
+
+/* Bouton "burger menu" pour les petits écrans */
+.mobMenu {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Menu mobile */
+.mobileMenu {
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    right: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    width: 150px;
+    z-index: 1000;
+}
+
+.mobileMenuItem {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mobileMenuItem:hover {
+    color: #ff5722;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .desktopMenu {
+        display: none; /* Cache le menu desktop sur les petits écrans */
+    }
+
+    .mobMenu {
+        display: block; /* Affiche le bouton burger sur les petits écrans */
+    }
+
+    .mobileMenu {
+        display: flex; /* Affiche le menu mobile en mode flex sur les petits écrans */
+    }
+}
