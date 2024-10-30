@@ -10,7 +10,7 @@ export default function Intro() {
         </h1>
         
         <div class="ContactBtnContent">
-          <a href="" class="ContactBtn">
+          <a href="tel:+33677068056" class="ContactBtn">
             06 77 06 80 56
           </a>
           
